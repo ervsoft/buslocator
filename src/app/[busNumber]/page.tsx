@@ -24,6 +24,7 @@ const BusPage = ({ params }: Props) => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    console.log()
     const fetchBusLocations = async () => {
       try {
         const res = await fetch(
